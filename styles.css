@@ -133,11 +133,20 @@ img.thumbnail {
     animation: fadeInUp 0.5s forwards;
 }
 
+.des-added{
+    margin-left: auto; /* Pushes the icon to the right end */
+    cursor: pointer;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%; /* Makes it circular */
+}
+
 .delete-icon {
     margin-left: auto; /* Pushes the icon to the right end */
     cursor: pointer;
     padding: 5px;
-    background-color: green;
+    background-color: black;
     color: white;
     border-radius: 50%; /* Makes it circular */
 }

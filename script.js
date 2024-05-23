@@ -82,6 +82,16 @@ document.addEventListener("DOMContentLoaded", function() {
             textarea.addEventListener('blur', saveToLocalStorage);
     
             div.appendChild(textarea);
+
+            const checkBox = document.createElement("span")
+            checkBox.textContent = '✅'
+            checkBox.className = 'des-added'
+            checkBox.addEventListener('click', () =>{
+                textarea.disabled = true;
+                alert("Description added.");
+                console.log("clicked")
+            })
+            div.appendChild(checkBox)
         
             const deleteIcon = document.createElement('span');
             deleteIcon.textContent = '❌';
@@ -132,7 +142,17 @@ document.addEventListener("DOMContentLoaded", function() {
             textarea.value = data.description;
             textarea.placeholder = "Add a description...";
             div.appendChild(textarea);
-    
+            
+            const checkBox = document.createElement("span")
+            checkBox.textContent = '✅'
+            checkBox.className = 'des-added'
+            checkBox.addEventListener('click', () =>{
+                textarea.disabled = true;
+                alert("Description added.");
+                console.log("description added")
+            })
+            div.appendChild(checkBox)
+
             const deleteIcon = document.createElement('span');
             deleteIcon.textContent = '❌';
             deleteIcon.className = 'delete-icon';
